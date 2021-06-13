@@ -22,7 +22,7 @@ jobs:
         with:
           host: ${{ secrets.AWS_HOST }}
           username: ${{ secrets.AWS_USER }}
-          key: ${{ secrets.AWS_KEY }}
+          password: ${{ secrets.AWS_PASSWORD }}
           script: |
             cd /home/joon && git pull
             npm install
