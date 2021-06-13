@@ -27,5 +27,5 @@ jobs:
             cd /home/joon && git clone https://github.com/ponya/plants-be.git
             cd ./plants-be
             npm install
-            npm build
+            npm run build
             npm run start:prod
