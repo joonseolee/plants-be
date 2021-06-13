@@ -1,0 +1,15 @@
+db:
+  main:
+    type: mysql
+    master:
+      url: ${MAIN_URL}
+      port: 3306
+      database: demo
+      username: masterUsername
+      password: qweqweqwe2!
+    slaves:
+      - url: ${MAIN_URL}
+        port: 3306
+        database: demo
+        username: masterUsername
+        password: qweqweqwe2!
